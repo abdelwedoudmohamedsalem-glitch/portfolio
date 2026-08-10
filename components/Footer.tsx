@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <Logo />
         <p>© {new Date().getFullYear()} Mohamed Salem Abdel Wedoud</p>
-        <a href="#home">Retour en haut ↑</a>
+        <a href="#home">Back to top ↑</a>
       </div>
     </footer>
   );

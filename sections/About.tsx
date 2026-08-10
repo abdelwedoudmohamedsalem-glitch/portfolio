@@ -7,20 +7,20 @@ const strengths = [
   {
     icon: ShieldCheck,
     number: "01",
-    title: "Sécuriser",
-    text: "Comprendre les risques et participer à la protection des environnements systèmes et réseaux.",
+    title: "Secure",
+    text: "Understand risks and help protect systems and network environments.",
   },
   {
     icon: Network,
     number: "02",
-    title: "Connecter",
-    text: "Concevoir une infrastructure fiable : adressage, routage, VLANs et services réseau.",
+    title: "Connect",
+    text: "Build reliable infrastructure: addressing, routing, VLANs, and network services.",
   },
   {
     icon: Binary,
     number: "03",
-    title: "Construire",
-    text: "Développer des outils et des applications utiles avec une approche pragmatique et structurée.",
+    title: "Build",
+    text: "Develop useful tools and applications with a pragmatic, structured approach.",
   },
 ];
 
@@ -30,9 +30,9 @@ export default function About() {
       <div className="container">
         <Reveal>
           <SectionHeading
-            eyebrow="À propos"
-            title="Curieux par nature. Rigoureux par méthode."
-            description="Passionné par la cybersécurité, je développe un profil hybride à la croisée des infrastructures, du développement et de la défense réseau. Mon objectif : rendre chaque système plus fiable, un environnement à la fois."
+            eyebrow="About"
+            title="Curious by nature. Methodical by design."
+            description="Passionate about cybersecurity, I am developing a hybrid profile at the intersection of infrastructure, software development, and network defense. My goal is to make every system more reliable, one environment at a time."
           />
         </Reveal>
         <div className="strength-grid">
@@ -54,9 +54,9 @@ export default function About() {
         </div>
         <Reveal>
           <div className="about-signal">
-            <span>EN CE MOMENT</span>
-            <p>Je recherche un stage pour approfondir mes compétences en sécurité des systèmes et réseaux dans un environnement stimulant.</p>
-            <a href="#contact">Échangeons <span>↗</span></a>
+            <span>CURRENTLY</span>
+            <p>I am looking for an internship to deepen my skills in systems and network security in a stimulating environment.</p>
+            <a href="#contact">Let&apos;s talk <span>↗</span></a>
           </div>
         </Reveal>
       </div>

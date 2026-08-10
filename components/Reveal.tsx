@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 type RevealProps = {
@@ -10,12 +10,11 @@ type RevealProps = {
 };
 
 export default function Reveal({ children, className, delay = 0 }: RevealProps) {
-  const reduceMotion = useReducedMotion();
-
   return (
     <motion.div
       className={className}
-      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      // Leave server-rendered content visible until the browser can hydrate it.
+      initial={false}
       transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
       viewport={{ once: true, amount: 0.16 }}
       whileInView={{ opacity: 1, y: 0 }}

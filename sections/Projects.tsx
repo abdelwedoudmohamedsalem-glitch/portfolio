@@ -7,8 +7,8 @@ const projects = [
   {
     icon: ShieldAlert,
     index: "01",
-    title: "PFE — Laboratoire IDS/IPS",
-    text: "Conception d’un environnement bancaire virtualisé avec pfSense, Suricata, Active Directory et OpenVPN. Les scans Nmap et attaques Hydra ont été détectés et bloqués en mode IPS.",
+    title: "Final project — IDS/IPS lab",
+    text: "Designed a virtualized banking environment with pfSense, Suricata, Active Directory, and OpenVPN. Nmap scans and Hydra attacks were detected and blocked in IPS mode.",
     tags: ["Suricata", "pfSense", "AD / VPN"],
     accent: "cyan",
     report: true,
@@ -17,23 +17,23 @@ const projects = [
     icon: ShoppingBag,
     index: "02",
     title: "Store e-commerce",
-    text: "Conception d’un site e-commerce avec HTML, CSS, JavaScript et PHP, puis exploration d’une version avancée sous Magento.",
+    text: "Built an e-commerce site with HTML, CSS, JavaScript, and PHP, then explored an advanced Magento version.",
     tags: ["PHP", "JavaScript", "Magento"],
     accent: "violet",
   },
   {
     icon: Database,
     index: "03",
-    title: "Comptes bancaires",
-    text: "Mini-projet de gestion de comptes bancaires construit avec Spring Boot pour consolider les fondamentaux backend.",
+    title: "Bank accounts",
+    text: "A small bank-account management project built with Spring Boot to strengthen backend fundamentals.",
     tags: ["Java", "Spring Boot", "SQL"],
     accent: "lime",
   },
   {
     icon: Layers3,
     index: "04",
-    title: "Services réseau & applications",
-    text: "Mise en place de Samba pour le partage de fichiers et développement d’une gestion de professeurs avec Flutter et Flask.",
+    title: "Network services & apps",
+    text: "Set up Samba file sharing and developed a teacher-management app with Flutter and Flask.",
     tags: ["Samba", "Flutter", "Flask"],
     accent: "orange",
   },
@@ -46,13 +46,13 @@ export default function Projects() {
         <Reveal>
           <div className="projects-heading">
             <SectionHeading
-              eyebrow="Projets sélectionnés"
-              title="Appliquer, tester, améliorer."
-              description="Des réalisations académiques qui traduisent mon intérêt pour les environnements concrets et les problématiques de sécurité."
+              eyebrow="Selected projects"
+              title="Apply, test, improve."
+              description="Academic projects that reflect my interest in real-world environments and security challenges."
             />
             <div className="projects-heading-actions">
-              <span className="project-count">04 PROJETS</span>
-              <a className="github-link" href="/documents/RPFE.pdf" target="_blank" rel="noreferrer">Lire le rapport PFE <ArrowUpRight aria-hidden="true" size={15} /></a>
+              <span className="project-count">04 PROJECTS</span>
+              <a className="github-link" href="/documents/RPFE.pdf" target="_blank" rel="noreferrer">Read final project report <ArrowUpRight aria-hidden="true" size={15} /></a>
             </div>
           </div>
         </Reveal>
@@ -73,7 +73,7 @@ export default function Projects() {
                   <div className="project-card-bottom">
                     <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
                     {project.report ? (
-                      <a className="project-report" href="/documents/RPFE.pdf" target="_blank" rel="noreferrer">Rapport <ArrowUpRight aria-hidden="true" size={15} /></a>
+                      <a className="project-report" href="/documents/RPFE.pdf" target="_blank" rel="noreferrer">Report <ArrowUpRight aria-hidden="true" size={15} /></a>
                     ) : (
                       <span className="project-arrow"><ArrowUpRight aria-hidden="true" size={18} /></span>
                     )}

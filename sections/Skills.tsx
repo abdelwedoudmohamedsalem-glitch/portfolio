@@ -4,10 +4,10 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 const groups = [
-  { icon: Radar, title: "Cybersécurité", skills: ["Kali Linux", "pfSense", "Suricata", "FortiGate", "ESET XDR"] },
-  { icon: Waypoints, title: "Systèmes & réseaux", skills: ["Active Directory", "OpenVPN", "Routage", "VLANs", "VirtualBox"] },
-  { icon: Code2, title: "Développement", skills: ["Python", "Java", "HTML / CSS / JS", "PHP", "SQL"] },
-  { icon: Server, title: "Outils & frameworks", skills: ["Nmap", "Hydra", "Wireshark", "Spring Boot", "Flask"] },
+  { icon: Radar, title: "Cybersecurity", skills: ["Kali Linux", "pfSense", "Suricata", "FortiGate", "ESET XDR"] },
+  { icon: Waypoints, title: "Systems & networks", skills: ["Active Directory", "OpenVPN", "Routing", "VLANs", "VirtualBox"] },
+  { icon: Code2, title: "Development", skills: ["Python", "Java", "HTML / CSS / JS", "PHP", "SQL"] },
+  { icon: Server, title: "Tools & frameworks", skills: ["Nmap", "Hydra", "Wireshark", "Spring Boot", "Flask"] },
 ];
 
 export default function Skills() {
@@ -16,14 +16,14 @@ export default function Skills() {
       <div className="container skills-layout">
         <Reveal className="skills-intro">
           <SectionHeading
-            eyebrow="Expertise"
-            title="Des fondations techniques solides."
-            description="Une boîte à outils en constante évolution, au service de systèmes plus efficaces et mieux protégés."
+            eyebrow="Skills"
+            title="Strong technical foundations."
+            description="A constantly evolving toolkit for more efficient and better protected systems."
           />
           <div className="language-list">
-            <span>AR <b>•</b> Natif</span>
-            <span>FR <b>•</b> Intermédiaire</span>
-            <span>EN <b>•</b> Intermédiaire</span>
+            <span>AR <b>•</b> Native</span>
+            <span>FR <b>•</b> Intermediate</span>
+            <span>EN <b>•</b> Intermediate</span>
           </div>
         </Reveal>
         <div className="skill-groups">

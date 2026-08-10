@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const links = [
-  { label: "Profil", href: "#about" },
-  { label: "Expertise", href: "#skills" },
-  { label: "Parcours", href: "#experience" },
-  { label: "Projets", href: "#projects" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -26,7 +26,6 @@ export default function Navbar() {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
-
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <nav aria-label="Navigation principale" className="nav container">
@@ -40,12 +39,12 @@ export default function Navbar() {
         </div>
         <a className="nav-resume" href="/cv/resume.pdf" target="_blank" rel="noreferrer">
           <Download aria-hidden="true" size={16} />
-          <span>Mon CV</span>
+          <span>Résumé</span>
         </a>
         <button
           aria-controls="mobile-navigation"
           aria-expanded={menuOpen}
-          aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           className="menu-toggle"
           onClick={() => setMenuOpen((open) => !open)}
           type="button"
@@ -70,7 +69,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="/cv/resume.pdf" onClick={closeMenu} target="_blank" rel="noreferrer">
-              <Download aria-hidden="true" size={16} /> Télécharger mon CV
+              <Download aria-hidden="true" size={16} /> Download my résumé
             </a>
           </motion.div>
         )}
