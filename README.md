@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Mohamed Salem Abdel Wedoud
 
-## Getting Started
+Portfolio personnel en français, orienté réseaux, cybersécurité et administration des systèmes.
 
-First, run the development server:
+## Contenu
+- Site responsive et interactif : Accueil, À propos, Compétences, Parcours, Projets, Certifications et Contact.
+- Pages détaillées séparées pour les travaux de stage NetworkWalks (semaines 2, 3 et 4) et pour le laboratoire Kali Linux / VirtualBox.
+- Captures d’écran extraites des archives fournies, utilisées dans les cartes et les galeries avec aperçu agrandi au clic.
+- Recherche instantanée parmi les projets de stage.
+- Animations d’apparition au défilement, barre de progression, navigation qui se compacte au scroll, bouton « retour en haut », effets de survol, micro-interactions et animation de la photo.
+- Respect du réglage système « réduire les animations » pour l’accessibilité.
+- Photo de profil et logos de la FST / Université de Nouakchott, de la Banque Nationale de Mauritanie et de NetworkWalks.
+- CV français en PDF.
+- Certificat de stage NetworkWalks.
+- Fichier de formation HCIA-Security fourni par l’utilisateur.
+- Archives ZIP de projets et de laboratoires de stage, accessibles depuis la section Projets.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Lancer localement
+1. Décompressez l’archive.
+2. Ouvrez `index.html` dans un navigateur ou utilisez Live Server dans VS Code / Code OSS.
+3. Une connexion Internet est nécessaire pour charger Bootstrap et les polices Google Fonts via CDN.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Personnalisation
+- Contenu : `index.html`
+- Styles : `assets/css/style.css`
+- Comportements du formulaire et de la navigation : `assets/js/main.js`
+- Images : `assets/img/`
+- CV, certificat et archives de stage : `assets/docs/`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Formulaire de contact
+Le formulaire prépare un e-mail avec `mailto:` dans l’application de messagerie par défaut. Il ne transmet pas les messages à un serveur.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Déploiement
+Le site est statique et peut être déployé sur GitHub Pages, Vercel, Netlify ou un hébergement web statique.
 
-## Learn More
+## Images d’arrière-plan
+Les images photographiques d’arrière-plan des sections et des pages de projet sont chargées depuis Unsplash via des URL HTTPS. Une connexion Internet est nécessaire pour les afficher. Les images de preuve issues des archives de stage restent locales au projet.
+Crédits/source : Unsplash — https://unsplash.com/ (photos d’illustration technologique, réseau et cybersécurité).
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Fonds des sections Compétences et Projets
+Les sections Compétences techniques et Projets disposent de fonds photographiques thématiques ainsi que d’images adaptées aux catégories de compétences. Ces images sont servies depuis Unsplash et nécessitent une connexion Internet ; les captures de projets fournies dans le dossier restent locales.
